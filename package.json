@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Use Lighthouse bot to set a performance budget.",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
     "start": "webpack && http-server -c-1",
     "lh": "lighthouse-ci"
   },
