@@ -22,6 +22,9 @@ jobs:
                   name: Build
                   command: npm run build
             - run:
+                  name: Chrome Launcher
+                  command: npm install chrome-launcher
+            - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
             - run:
