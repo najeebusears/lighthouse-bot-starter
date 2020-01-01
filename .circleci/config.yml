@@ -22,7 +22,7 @@ jobs:
                   name: Build
                   command: npm run build
             - run:
-                  name: Chrome Launcher
+                  name: Chromium
                   command: npm install chromium
             - run:
                   name: Lighthouse cli
