@@ -24,6 +24,8 @@ jobs:
             - run:
                   name: Chromium
                   command: npm install chromium
+                  environment:
+                  CHROME_PATH: /usr/bin/chromium-browser
             - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
