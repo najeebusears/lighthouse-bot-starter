@@ -28,8 +28,6 @@ jobs:
             - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
-                  environment:
-                     LHCI_BASE_URL: https://www.searspartsdirect.com
             - run:
                   name: lhci autorun
                   command: lhci autorun --collect.url $LHCI_BASE_URL --upload.target=temporary-public-storage
