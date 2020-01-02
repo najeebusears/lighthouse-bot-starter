@@ -8,7 +8,7 @@
         "https://www.searspartsdirect.com/",
 		"https://www.searspartsdirect.com/brands/"
       ]
-    }
+    },
     "upload": {
       "urlReplacementPatterns": [
         "s/[0-9a-f]{12}$/HASH/",
