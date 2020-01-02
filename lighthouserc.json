@@ -5,8 +5,8 @@
     },
 	 "collect": {
       "url": [
-        "https://www.searspartsdirect.com/",
-		"https://www.searspartsdirect.com/brands/"
+        "${BASE_URL}/",
+		"${BASE_URL}/brands/"
       ]
     },
     "upload": {
