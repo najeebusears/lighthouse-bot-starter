@@ -36,7 +36,11 @@ jobs:
                   command: sudo npm install -g @lhci/cli@0.3.x
             - run:
                   name: lhci autorun
-                  command: lhci autorun --config=./lighthouserc.yml --upload.target=temporary-public-storage
+                  command: | 
+                     echo "export LHCI_BASE_URL=https://www.searspartsdirect.com" >> $BASH_ENV
+                     source $BASH_ENV
+                     | 
+                     lhci autorun --config=./lighthouserc.yml --upload.target=temporary-public-storage
             - run:
                   name: Firebase Deploy
                   command: ./node_modules/.bin/firebase deploy --project my-first-firebase-projec-6baf8 --token "$FIREBASE_TOKEN" --only hosting
