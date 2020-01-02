@@ -1,6 +1,6 @@
 ci:
   collect:
     url:
-      - $LHCI_BASE_URLS/
-      - $LHCI_BASE_URL/brands/
+      - LHCI_BASE_URLS/
+      - LHCI_BASE_URL/brands/
 
