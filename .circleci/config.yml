@@ -28,6 +28,10 @@ jobs:
                     source $BASH_ENV
                     echo $LHCI_BASE_URL
             - run:
+                  name: Check Environment Variables
+                  command: |
+                    echo $LHCI_BASE_URL
+            - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
             - run:
