@@ -39,7 +39,6 @@ jobs:
                   command: | 
                      echo "export LHCI_BASE_URL=https://www.searspartsdirect.com" >> $BASH_ENV
                      source $BASH_ENV
-                     | 
                      lhci autorun --config=./lighthouserc.yml --upload.target=temporary-public-storage
             - run:
                   name: Firebase Deploy
