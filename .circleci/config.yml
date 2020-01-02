@@ -3,6 +3,8 @@ jobs:
     build:
         docker:
             - image: circleci/node:10.16.0-browsers
+              environment:
+                LHCI_BASE_URL:https://www.searspartsdirect.com
         working_directory: ~/repo
         steps:
             - checkout
@@ -26,6 +28,7 @@ jobs:
                   command: |
                     echo "export LHCI_BASE_URL=https://www.searspartsdirect.com" >> $BASH_ENV
                     source $BASH_ENV
+                    echo $LHCI_BASE_URL
             - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
