@@ -22,6 +22,10 @@ jobs:
                   name: Build
                   command: npm run build
             - run:
+                  name: Setup Environment Variables
+                  command: |
+                    echo "export LHCI_BASE_URL=https://www.searspartsdirect.com" >> $BASH_ENV
+            - run:
                   name: Lighthouse cli
                   command: sudo npm install -g @lhci/cli@0.3.x
                   environment:
