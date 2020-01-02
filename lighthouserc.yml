@@ -1,0 +1,6 @@
+ci:
+  collect:
+    url:
+      - $LHCI_BASE_URL/
+      - $LHCI_BASE_URL/brands/
+
