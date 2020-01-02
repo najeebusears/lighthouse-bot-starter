@@ -5,8 +5,8 @@
     },
 	 "collect": {
       "url": [
-        "$BASE_URL/",
-		"$BASE_URL/brands/"
+        "$LHCI_BASE_URL/",
+		"$LHCI_BASE_URL/brands/"
       ]
     },
     "upload": {
