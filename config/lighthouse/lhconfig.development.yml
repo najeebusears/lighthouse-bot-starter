@@ -1,5 +1,20 @@
 ci:
+  assert:
+    preset: lighthouse:default
+    assertions:
+      categories:performance:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.25
+      categories:accessibility:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.6
+      categories:seo:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.9
   collect:
     url:
-      - https://www.searspartsdirect.com/brands/
-      - https://www.searspartsdirect.com/categories/
+    - https://www.searspartsdirect.com/brands/
+    - https://www.searspartsdirect.com/categories/
