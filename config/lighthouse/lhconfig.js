@@ -1,8 +1,7 @@
 module.exports = {
   extends: 'lighthouse:default',
   settings: {
-    onlyCategories: ['performance'],
-    onlyAudits: ['first-meaningful-paint','speed-index-metric'],
+    onlyCategories: ['Best Practices'],
 	output: 'json'
   }
 } 
