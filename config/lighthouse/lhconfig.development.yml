@@ -1,6 +1,6 @@
 ci:
   assert:
-    preset: lighthouse:default
+    preset: lighthouse:recommended
     assertions:
       categories:performance:
       - warn
