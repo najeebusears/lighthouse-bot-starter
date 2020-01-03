@@ -38,7 +38,7 @@ jobs:
                   name: lhci autorun
                   command: | 
 
-                     lhci autorun --config=./lighthouserc-$ENVIRONMENT.yml --upload.target=temporary-public-storage
+                     lhci autorun --config=./config/lighthouse/lhconfig.$ENVIRONMENT.yml --upload.target=temporary-public-storage
             - run:
                   name: Firebase Deploy
                   command: ./node_modules/.bin/firebase deploy --project my-first-firebase-projec-6baf8 --token "$FIREBASE_TOKEN" --only hosting
