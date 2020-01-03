@@ -23,10 +23,10 @@ ci:
       - estimated-input-latency
       - first-interactive
       - consistently-interactive
-    onlyCategories:
-    - performance
-    - accessibility
-    - seo
+      onlyCategories:
+      - performance
+      - accessibility
+      - seo
     numberOfRuns: 1
     url:
     - https://www.searspartsdirect.com/brands/
