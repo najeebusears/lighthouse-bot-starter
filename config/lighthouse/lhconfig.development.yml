@@ -17,7 +17,7 @@ ci:
         minScore: 0.9
   collect:
     settings:
-      configPath: "./lhconfig.json"
+      configPath: "config/lighthouse/lhconfig.json"
     numberOfRuns: 1
     url:
     - https://www.searspartsdirect.com/brands/
