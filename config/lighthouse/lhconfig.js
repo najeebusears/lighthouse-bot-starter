@@ -1,6 +1,7 @@
 module.exports = {
   extends: 'lighthouse:default',
   settings: {
-    onlyCategories: ['best-practicessssssssssss'],
+    onlyCategories: ['accessibility'],
+    onlyAudits: ['first-meaningful-paint','speed-index-metric'],
   }
 } 
