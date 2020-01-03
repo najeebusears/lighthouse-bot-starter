@@ -2,7 +2,6 @@
 ci:
   assert:
     preset: lighthouse:recommended
-    config: ./lhconfig.json
     assertions:
       categories:performance:
       - warn
@@ -17,6 +16,8 @@ ci:
       - aggregationMethod: optimistic
         minScore: 0.9
   collect:
+    settings:
+      configPath:./lhconfig.json
     numberOfRuns: 1
     url:
     - https://www.searspartsdirect.com/brands/
