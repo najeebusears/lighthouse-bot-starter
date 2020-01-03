@@ -1,0 +1,5 @@
+ci:
+  collect:
+    url:
+      - https://www.searspartsdirect.com/brands/
+      - https://www.searspartsdirect.com/categories/
