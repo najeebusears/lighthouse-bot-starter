@@ -1,6 +1,4 @@
 ci:
-  assert:
-    preset: lighthouse:recommended
   collect:
     settings:
       configPath: "config/lighthouse/lhconfig.js"
