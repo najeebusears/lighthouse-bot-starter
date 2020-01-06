@@ -2,7 +2,7 @@ ci:
   assert:
     assertions:
       categories:performance:
-      - error
+      - warn
       - aggregationMethod: optimistic
         minScore: 0.60
       categories:accessibility:
