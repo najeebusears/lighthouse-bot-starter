@@ -1,4 +1,18 @@
 ci:
+  assert:
+    assertions:
+      categories:performance:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.25
+      categories:accessibility:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.6
+      categories:seo:
+      - warn
+      - aggregationMethod: optimistic
+        minScore: 0.9
   collect:
     settings:
       configPath: "config/lighthouse/lhconfig.js"
