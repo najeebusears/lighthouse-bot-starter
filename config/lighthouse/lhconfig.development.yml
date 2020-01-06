@@ -18,6 +18,5 @@ ci:
       configPath: "config/lighthouse/lhconfig.js"
     numberOfRuns: 1
     url:
-    - https://www.searspartsdirect.com/brands/
-    - https://www.searspartsdirect.com/categories/
-    - https://www.searspartsdirect.com/
+    - lhci/url/brands
+    - lhci/url/categories
